@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .form {
+            width: 350px;
+            padding: 25px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: float 2s ease-in-out infinite alternate;
+            
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(-10px);
+            }}
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 9px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #555;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form">
+
+        <form>
+
+           
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" pattern="[A-Za-z]+" required placeholder="Enter your first name" >
+
+
+           
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone pattern="01[012][0-9]{8}" maxlength="11"  required  placeholder="Enter your phone number">
+
+
+           
+            <label for="course">Courses</label>
+
+            <input type="text" id="course" list="courses" placeholder="Choose your course"  >
+
+            <datalist id="courses">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="React">
+                <option value="Node.js">
+            </datalist>
+
+
+            <label for="image">Image</label>
+
+            <input type="file"id="image" accept=".png">
+
+
+            
+            <label for="comment">Comment</label>
+
+            <input  type="text" id="comment" minlength="20" maxlength="100" placeholder="Enter your comment">
+
+
+           
+            <label for="date">Date</label>
+
+            <input type="date"id="date" required>
+
+
+         
+            <label for="id">ID</label>
+
+            <input
+                type="number" id="id" placeholder="Enter your ID">
+
+
+            <input type="submit" value="Submit" >
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
