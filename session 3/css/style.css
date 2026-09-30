@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    background-color: #ECF0F1;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background-color: #bf2ecc;
+    color: #fff;
+    
+}
+
+.title{
+    font-size: 55px;
+}
+
+.top-title{
+    font-size: 50px;
+    color: #bf2ecc;
+    
+
+}
+
+.top-p{
+    font-size: 20px;
+    color: #979998;
+}
+.main {
+    background-color: #ECF0F1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+.top {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+    background: #fff;
+}
+
+.menu {
+    width: 100%;
+    height: 220px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.menu-title{
+    font-size: 50px;
+    color: #bf2ecc;
+    text-align: center;
+}
+.menu-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    color: #979998;
+}
+
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 3%;
+    background-color: #bf2ecc;
+    color: #fff;
+    bottom: 0;
+}
+
+
+.foot p {
+    font-size: 20px;
+}
+
+
+.card {
+    width: 500px;
+    min-height: 500px;
+    background-color: #fff;
+
+    border: 2px solid #d8dce5;
+    border-radius: 22px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+    gap: 12px;
+
+    text-align: center;
+}
+
+.card-img {
+    width: 165px;
+    height: 165px;
+
+    border-radius: 50%;
+
+    background-color: #bf2ecc;
+
+    border: 8px solid #e0b7e5;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+}
+
+
+.card-title {
+    font-size: 34px;
+    color: #222;
+}
+
+
+.card-p {
+    font-size: 21px;
+    font-weight: bold;
+    color: #bf2ecc;
+}
+
+
+.card-info {
+    font-size: 19px;
+    line-height: 1.4;
+    color: #666;
+
+    max-width: 400px;
+
+    margin-bottom: 15px;
+}
+
+
+.card-btns {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.card-btn {
+    width: 180px;
+    padding: 14px 20px;
+
+    border-radius: 30px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border: 3px solid #bf2ecc;
+
+    background-color: #bf2ecc;
+    color: white;
+}
+
+
+.card-btn:last-child {
+    background-color: white;
+    color: #bf2ecc;
+}
+
+.cards {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.price-card {
+    width: 390px;
+
+    background-color: #fff;
+
+    border: 2px solid #d8dce5;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.price-head {
+    height: 190px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #bf2ecc;
+    color: #fff;
+}
+
+.price-head h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.price-head h2 {
+    font-size: 55px;
+
+    line-height: 1;
+}
+
+.price-head p {
+    font-size: 18px;
+
+    margin-top: 10px;
+}
+
+.price-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-body p {
+    width: 100%;
+
+    padding: 20px;
+
+    font-size: 20px;
+
+    color: #222;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.price-body button {
+    width: 80%;
+
+    margin: 32px 0;
+
+    padding: 16px;
+
+    border: none;
+    border-radius: 35px;
+
+    background-color: #bf2ecc;
+
+    color: #fff;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
