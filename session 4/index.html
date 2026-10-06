@@ -1,77 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Code Academy</title>
 </head>
-
 <body>
- 
 
-    <nav>
-        <div class="logo"><p><span><i class="fa-solid fa-code"  ></i></span>  Code Academy</p></div>
-        <ul>
+    <nav class="navbar">
+        <div class="logo">
+            <p>
+                <span><i class="fa-solid fa-code"></i></span>
+                Code Academy
+            </p>
+        </div>
+
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#course">Course</a></li>
+            <li><a href="#courses">Courses</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="overlay">
-        <h2 class="main-title">Learn Web Development</h2>
-        <p class="main-p">Start your journey with HTML, CSS and JavaScript today</p>
-        <div class="main-btns">
-            <a href="#getstarted"><button class="btn btn1">Get Started</button></a>
-            <a href="#watchvideo"><button class="btn btn2">Watch video</button></a>
+            <h1 class="hero-title">Learn Web Development</h1>
+            <p class="hero-text">Start your journey with HTML, CSS and JavaScript today</p>
+
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary">
+                    <i class="fa-solid fa-rocket"></i>
+                    Get Started
+                </a>
+
+                <a href="#video" class="btn btn-secondary">
+                    <i class="fa-solid fa-play"></i>
+                    Watch Video
+                </a>
+            </div>
         </div>
-
-        </div>
-
-
     </section>
 
-
-
-
-
-
-
-
-
-
-    <section class=" bg-light text-center padding-top-bottom ">
+    <section class="why-section" id="about">
         <div class="container">
-            <h2 class="title-style">Why this is awsome</h2>
-            <hr class="hr-style">
-
-
-            <div class="card">
-                <i class="fa-solid fa-lightbulb icons" ;"></i>
-                <h3 class="t">Thoughtful Design</h3>
-                <p class="p">Our design is drawn from 1950s modernism and is backed by decades of industry experience.</p>
+            <div class="section-heading">
+                <h2>Why Learn With Us?</h2>
+                <p>Everything you need to become a front-end developer</p>
             </div>
 
-            <div class="card">
-                <i class="fa-solid fa-lightbulb icons" ;"></i>
-                <h3 class="t">Thoughtful Design</h3>
-                <p class="p">Our design is drawn from 1950s modernism and is backed by decades of industry experience.</p>
-            </div>
+            <div class="why-cards">
+                <div class="why-card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3>Expert Teachers</h3>
+                    <p>Learn from developers with years of real experience.</p>
+                </div>
 
-            <div class="card">
-                <i class="fa-solid fa-lightbulb icons" ;"></i>
-                <h3 class="t">Thoughtful Design</h3>
-                <p class="p">Our design is drawn from 1950s modernism and is backed by decades of industry experience.</p>
+                <div class="why-card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Real Projects</h3>
+                    <p>Build websites step by step and add them to your portfolio.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3>Certificate</h3>
+                    <p>Get a certificate when you finish every course.</p>
+                </div>
             </div>
         </div>
     </section>
-    
-</body>
 
+    <section class="courses-section" id="courses">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our Courses</h2>
+                <p>Pick a course and start learning now</p>
+            </div>
+
+            <div class="course-cards">
+
+                <div class="course-card">
+                    <div class="course-image html-course">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+
+                    <div class="course-content">
+                        <h3>HTML Basics</h3>
+
+                        <div class="course-info">
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                10 Hours
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-book"></i>
+                                20 Lessons
+                            </span>
+                        </div>
+
+                        <span class="price">$20</span>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image css-course">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+
+                    <div class="course-content">
+                        <h3>CSS Styling</h3>
+
+                        <div class="course-info">
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                15 Hours
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-book"></i>
+                                30 Lessons
+                            </span>
+                        </div>
+
+                        <span class="price">$30</span>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image js-course">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+
+                    <div class="course-content">
+                        <h3>JavaScript</h3>
+
+                        <div class="course-info">
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                25 Hours
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-book"></i>
+                                45 Lessons
+                            </span>
+                        </div>
+
+                        <span class="price">$45</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container stats-container">
+
+            <div class="stat">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h3>1500+</h3>
+                <p>Students</p>
+            </div>
+
+            <div class="stat">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>25</h3>
+                <p>Courses</p>
+            </div>
+
+            <div class="stat">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h3>12</h3>
+                <p>Teachers</p>
+            </div>
+
+            <div class="stat">
+                <i class="fa-solid fa-star"></i>
+                <h3>4.9</h3>
+                <p>Rating</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Contact Us</h2>
+                <p>We are happy to answer your questions</p>
+            </div>
+
+            <div class="contact-cards">
+
+                <div class="contact-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Address</h3>
+                    <p>Cairo, Egypt</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+20 100 000 0000</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@codeacademy.com</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+        <p>© 2026 Code Academy. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
